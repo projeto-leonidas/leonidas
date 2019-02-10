@@ -26,3 +26,6 @@ htmlcov/
 *.log
 venv/
 __pycache__/
+
+# TOKENS
+tests_utils/token.py
