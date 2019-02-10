@@ -1,0 +1,81 @@
+* ALGORITMO AdaBoosting
+
+Essa técnica de aprendizado sequencial soa um pouco como Gradient Descent , exceto que, em vez de ajustar o parâmetro de um único preditor para minimizar a função de custo, o AdaBoost adiciona preditores ao conjunto gradualmente, tornando-o melhor. A grande desvantagem deste algoritmo é que o modelo não pode ser paralelizado, já que cada preditor pode ser treinado somente após o anterior ter sido treinado e avaliado.
+
+Abaixo estão as etapas para executar o algoritmo AdaBoost:
+
+1. Inicialmente, todas as observações recebem pesos iguais.
+2. Um modelo é construído em um subconjunto de dados.
+3. Usando esse modelo, as previsões são feitas em todo o conjunto de dados.
+4. Os erros são calculados comparando as previsões e os valores reais.
+5. Ao criar o próximo modelo, são dados pesos mais altos aos pontos de dados que foram previstos incorretamente.
+6. Os pesos podem ser determinados usando o valor de erro. Por exemplo, quanto maior o erro, maior é o peso atribuído à observação.
+7. Esse processo é repetido até que a função de erro não seja alterada ou o limite máximo do número de estimadores seja atingido.
+
+#Hyperparameters
+
+base_estimators: especifica o estimador do tipo de base, ou seja, o algoritmo a ser utilizado como aluno de base.
+
+n_estimators: Define o número de estimadores de base, onde o padrão é 10, mas você pode aumentá-lo para obter um melhor desempenho.
+
+learning_rate : mesmo impacto que no algoritmo de descida de gradiente
+
+max_depth : Profundidade máxima do estimador individual
+
+n_jobs : indica ao sistema quantos processadores ele pode usar. Valor de '-1' significa que não há limite;
+
+random_state : torna a saída do modelo replicável. Ele sempre produzirá os mesmos resultados quando você fornecer um valor fixo, além dos mesmos parâmetros e dados de treinamento.
+
+------------------------------------------------------------------
+*ALGORITMO Gradient Boosting
+
+Abaixo estão os passos para realizar o algoritmo Gradien Boosting:
+
+1. Um modelo é construído em um subconjunto de dados.
+2. Usando esse modelo, as previsões são feitas em todo o conjunto de dados.
+3. Os erros são calculados comparando as previsões e os valores reais.
+4. Um novo modelo é criado usando os erros calculados como variável de destino. Nosso objetivo é encontrar a melhor divisão para minimizar o erro.
+5. As previsões feitas por este novo modelo são combinadas com as previsões do anterior.
+6. Novos erros são calculados usando este valor previsto e valor real.
+7. Esse processo é repetido até que a função de erro não seja alterada ou o limite máximo do número de estimadores seja atingido.
+
+#Hyperparameters
+min_samples_split: Número mínimo de observação que é necessário em um nó a ser considerado para divisão. É usado para controlar overfitting.
+
+min_samples_leaf : Amostras mínimas necessárias em um nó terminal ou folha. Valores mais baixos devem ser escolhidos para problemas de classe desequilibrados, uma vez que as regiões nas quais a classe minoritária será a maioria serão muito pequenas.
+
+min_weight_fraction_leaf : semelhante ao anterior, mas define uma fração do número total de observações em vez de um inteiro.
+
+max_depth : profundidade máxima de uma árvore. Usado para controlar overfitting.
+
+max_lead_nodes : número máximo de folhas de terminal em uma árvore. Se isso for definido, max_depthserá ignorado.
+
+max_features : número de recursos que você deve considerar ao procurar a melhor divisão.
+
+-------------------------------------------------------------
+XGBoost
+
+Esse algoritmo tem alto poder preditivo e é dez vezes mais rápido que qualquer outra técnica de aumento de gradiente. Além disso, inclui uma variedade de regularização que reduz o overfitting e melhora o desempenho geral.
+
+Vantagens
+
+* Implementa regularização ajudando a reduzir overfit (GB não possui);
+* Implementa o processamento paralelo sendo muito mais rápido que o GB;
+* Permite que os usuários definam objetivos de otimização personalizados e critérios de avaliação, adicionando uma nova dimensão ao modelo;
+* O XGBoost possui uma rotina integrada para lidar com valores ausentes;
+* O XGBoost faz divisões até o max_depthespecificado e, em seguida, inicia a remoção da árvore para trás e remove as divisões além das quais não há ganho positivo;
+* O XGBoost permite que um usuário execute uma validação cruzada a cada iteração do processo de reforço e, portanto, é fácil obter o número exato exato de impulsionar as iterações em uma única execução.
+* Luz GB
+* Para conjuntos de dados que são extremamente grandes, o Light Gradient Boosting é o melhor, comparado a todos os outros, já que leva menos tempo para ser executado.
+
+----------------------------------------------------------------
+
+# Em ações da AMBEV houve desdobramento em 2013
+
+----------------------------------------------------------------
+
+# Passos no tratamento dos dados:
+    * splitDataset.py
+    * searchCompany.py
+    * sort.py
+    * convertDate.py

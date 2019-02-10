@@ -1,0 +1,24 @@
+https://www.kaggle.com/dcampeao/bovespa -   DATASET KAGGLE
+
+http://minerandodados.com.br/index.php/2017/05/19/prevendo-precos-de-acoes-da-bolsa-de-valores-com-machine-learning/    -   Como Utilizar Machine Learning para Prever Preços de Ações da Bolsa de Valores – O Estudo de Caso Completo.
+
+https://medium.freecodecamp.org/what-we-learned-by-serving-machine-learning-models-using-aws-lambda-c70b303404a1    -   O que aprendemos servindo modelos de aprendizado de máquina usando o AWS Lambda
+
+https://github.com/minerandodados/mdrepo/blob/master/petr4_1_2010_11_2017.csv   -   Dataset do artigo do MINERADO DADOS
+
+https://github.com/minerandodados/mdrepo/blob/master/regressao-linear.ipynb -   Notebook do artigo do MINERADO DADOS
+
+https://medium.com/diogo-menezes-borges/boosting-with-adaboost-and-gradient-boosting-9cbab2a1af81 - Impulsionando com AdaBoost e Gradient Boosting
+
+https://paulovasconcellos.com.br/28-comandos-%C3%BAteis-de-pandas-que-talvez-voc%C3%AA-n%C3%A3o-conhe%C3%A7a-6ab64beefa93 - 28 comandos úteis de Pandas que talvez você não conheça
+
+http://monografias.poli.ufrj.br/monografias/monopoli10002335.pdf - http://monografias.poli.ufrj.br/monografias/monopoli10002335.pdf
+
+http://deeplearningbook.com.br/a-arquitetura-das-redes-neurais/ - Capítulo 9 – A Arquitetura das Redes Neurais
+
+https://medium.com/the-research-nest/applied-machine-learning-part-1-40578469a934 - Aprendizagem Automática Aplicada: Parte 1 [Previsão Usando Regressão Linear, LassoCV, ElasticNet, RidgeCV e xgboost]
+
+https://towardsdatascience.com/stacked-neural-networks-for-prediction-415ef3b04826 - Redes Neurais Empilhadas para Predição
+
+https://towardsdatascience.com/deep-learning-in-finance-9e088cb17c03 - Aprendizagem Profunda em Finanças
+
